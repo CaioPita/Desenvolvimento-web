@@ -2,18 +2,18 @@
 <html lang="pt-br">
 
 
-    <head>
-        <meta charset="utf-8">
-        <title>Aula 4 - Abertura</title>
-        <!-- Estilizando com CSS -->
-        <style type="text/CSS"> 
-            h1{color: red;
+<head>
+    <meta charset="utf-8">
+    <title>Aula 4 - Abertura</title>
+    <!-- Estilizando com CSS -->
+    <style type="text/CSS">
+        h1{color: red;
                 font-size: 60px;
                 text-align: center;
                 text-shadow: 3px 3px 3px red;}
             body{
                 /* Cor de fundo da página */
-                background-color: rgb(24, 16, 100);
+                background-color: rgb(47, 34, 187);
                 /* Tipo da fonte da letra da página */
                 font-family: Arial, Helvetica, sans-serif;}
             h2{color: blue;
@@ -27,78 +27,71 @@
                 text-align: center;}
             img{width: 1350px;
                 height: 500px;}
-            fieldset{background-color: white;
-                height: 200px;
+            fieldset{background-color: rgb(47, 34, 187);
+                height: 300px;
                 width: 1300px;
                 text-align: center;
+                min-height: m;
                 }
-                
+            legend{font-size: 50px;}
+            h3{text-align: center;
+                font-size: 100px;}
         </style>
-    </head>
-    <body>
+</head>
 
-        <img src="c:\Users\AlunoTI\Downloads\maluquinho.png">
-        <h1>Bar do Doido</h1>
-        <hr/>
-        <h2>Cardápio</h2>
-        <p>Itens:
-            <!-- Lista ordenada -->
-            <ol start="1" type="1">
-                <li>Vinho</li>
-                <li>Whisky</li>
-                <li>Cerveja</li>
-                <li>Vodka</li>
+<body>
 
-            </ol>
+    <img src="c:\Users\AlunoTI\Downloads\maluquinho.png">
+    <h1>Bar do Doido</h1>
+    <hr />
+    <h2>Cardápio</h2>
+    <p>Itens:
+        <!-- Lista ordenada -->
+    <ol start="1" type="1">
+        <li>Vinho</li>
+        <li>Whisky</li>
+        <li>Cerveja</li>
+        <li>Vodka</li>
+
+    </ol>
+    <h3>Faça seu Pedido</h3>
+
+    <form id="reserva" action="#" method="post">
+        <fieldset>
+
             
-            <form id="reserva" action="#" method="post">
-                <br />
-                <br />
-                <fieldset>
-                   
-                    <legend>Faça seu Pedido!</legend>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="txtnome" name="nome" required
-                    placeholder="Digite o nome..." style="width: 20;"
-                    /><br/>
-                    <div class="campo">
-                    <label class="checkbox">Drinks:
-                        <input type="radio"name="Drinks"
-                        value = "Gelado"/>Gelado
-                    </label>
-                    <label class="checkbox"
-                        ><input type="radio"name="Drinks"
-                        value = "Quente"/>Quente
-                    </div>
-                    </label>
-                    <label for="Bebida">Bebida:</label>
-                    <input type="email" id="email" name="email" required
-                    placeholder="Digite a Bebida..." style="width: 20;"
-                    /><br/>
-                    <label for="Quantidade">Quantidade:</label>
-                    <input type="tel" id="telefone" name="telefone" required
-                    placeholder="Digite a Quantidade..." style="width: 20;"
-                    />
-                    <label for="senha">Senha:</label>
-                    <input type="password" 
-                    id="txtsenha" name="senha" required maxlength="8"
-                    placeholder="Digite a senha..." style="width: 20;"
-                    />
-                    <br/>
-                    <label for="confirmarSenha">Confirmar Senha:</label>
-                    <input type="password" id="confirmarSenha" required
-                    placeholder="Confirme a senha..." style="width: 20;"
-                    />
-                    <br/>
-                    <label for="endereço">Endereço de entrega:</label>
-                    <input type="text" id="endereço" name="endereço" required
-                    placeholder="Digite o seu endereço..." style="width: 20;"
-                    />
-                    <input type="submit" value="Buscar..." />
-                    <input type="reset" value="Limpar..." />
-                    </fieldset>
-            
+            <label for="nome">Nome:</label>
+            <input type="text" id="txtnome" name="nome" required placeholder="Digite o nome..."
+                style="width: 20;" /><br />
+            <div class="campo">
+                <label class="checkbox">Drinks:
+                    <input type="radio" name="Drinks" value="Gelado" />Gelado
+                </label>
+                <label class="checkbox"><input type="radio" name="Drinks" value="Quente" />Quente
+            </div>
+            </label>
+            <label for="Bebida">Bebida:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite a Bebida..."
+                style="width: 20;" /><br />
+            <label for="Quantidade">Quantidade:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="Digite a Quantidade..."
+                style="width: 20;" />
+            <label for="senha">Senha:</label>
+            <input type="password" id="txtsenha" name="senha" required maxlength="8" placeholder="Digite a senha..."
+                style="width: 20;" />
+            <br />
+            <label for="confirmarSenha">Confirmar Senha:</label>
+            <input type="password" id="confirmarSenha" required placeholder="Confirme a senha..." style="width: 20;" />
+            <br />
+            <label for="endereço">Endereço de entrega:</label>
+            <input type="text" id="endereço" name="endereço" required placeholder="Digite o seu endereço..."
+                style="width: 20;" />
+            <input type="submit" value="Buscar..." />
+            <input type="reset" value="Limpar..." />
+        </fieldset>
+
         </p>
 
-    </body>
+</body>
+
 </html>
