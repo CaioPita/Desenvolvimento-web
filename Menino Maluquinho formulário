@@ -7,45 +7,73 @@
     <title>Aula 4 - Abertura</title>
     <!-- Estilizando com CSS -->
     <style type="text/CSS">
-        h1{color: red;
+        h1{color: rgb(44, 142, 207);
                 font-size: 60px;
                 text-align: center;
                 text-shadow: 3px 3px 3px red;}
             body{
                 /* Cor de fundo da página */
-                background-color: rgb(47, 34, 187);
+                background-color: rgb(12, 52, 78);
                 /* Tipo da fonte da letra da página */
                 font-family: Arial, Helvetica, sans-serif;}
-            h2{color: blue;
+            h2{color: rgb(44, 142, 207);
                 font-size: 60px;
                 text-align: center;}
-            ol{color: blue;
-                font-size: 30px;
-                text-align: center;}
-            p{color: red;
+            ol{color: rgb(44, 142, 207);
                 font-size: 40px;
                 text-align: center;}
-            img{width: 1350px;
-                height: 500px;}
-            fieldset{background-color: rgb(47, 34, 187);
-                height: 300px;
-                width: 1300px;
-                text-align: center;
-                min-height: m;
+            img{width: 500px;
+                height: 500px;
+                left: 400px;
+                position: relative;
+                
+            }
+            fieldset{background-color: rgb(212, 210, 224);
+                height: 500px;
+                width: 400px;
+                left: 530px;
+                position: relative;
+                
                 }
             legend{font-size: 50px;}
             h3{text-align: center;
                 font-size: 100px;}
+            input{color: rgb(44, 230, 230);
+                font-size: 20px;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            button{color: rgb(44, 230, 230);
+                font-size: 20px;
+                background-color: #04AA6D;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 10px 10px;
+                cursor: pointer;
+                transition: 0.5;
+                opacity: 0.7;
+                position: absolute;
+            }
+            button {
+
+            }
+
         </style>
 </head>
 
 <body>
 
     <img src="c:\Users\AlunoTI\Downloads\maluquinho.png">
+    <button type="button" onclick="alert('Bem Vindo ao Bar do maluquinho')">Clique aqui... </button>
     <h1>Bar do Doido</h1>
     <hr />
     <h2>Cardápio</h2>
-    <p>Itens:
         <!-- Lista ordenada -->
     <ol start="1" type="1">
         <li>Vinho</li>
@@ -86,8 +114,6 @@
             <label for="endereço">Endereço de entrega:</label>
             <input type="text" id="endereço" name="endereço" required placeholder="Digite o seu endereço..."
                 style="width: 20;" />
-            <input type="submit" value="Buscar..." />
-            <input type="reset" value="Limpar..." />
         </fieldset>
 
         </p>
